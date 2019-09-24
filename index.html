@@ -5,6 +5,98 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>Tarea 3.1 Visual Analytics</h1>
+  <h1>Nicolás Alberto Cáceres Acosta</h1>
+  <p>Titulo de los datos: Cadena Productiva Cacao - Área, Producción Y Rendimiento</p>
 
-</body>
+  <p>Fuente de los datos: https://www.datos.gov.co/Agricultura-y-Desarrollo-Rural/Cadena-Productiva-Cacao-Area-Producci-n-Y-Rendimie/7rr4-csic</p>
+
+  <p>La fuente de los datos contiene las producciones de cacao de los años 2016 a 2018, que se dan a lo largo del territorio Colombiano.</p>
+  <p>Ejemplo de tabla completa:
+  </p>
+   <img src="Imagen 1.png" alt="tabla1" >
+  <p>Para realizar la visualizacion solo tomamos en cuenta un pedazo de la tabla completa:</p>
+   <img src="Imagen 2.png" alt="tabla2" >
+  <p>Donde el significado de los atributos será descrito mas adelante dentro del what, pero cada registro hace referencia a una cantidad de toneladas de cacao que fueron producidas por el departamento en un año especifico, con un area sembrada y cosechada especifica y un rendimiento calculado a partir del área cosechada y la producción.</p>
+  <h1>Santander el departamento que mas produce Cacao en Colombia. Amazonas, Vaupes y Bolívar los departamentos con menor rendimiento de producción.</h1>
+  <h4>En los años 2016 a 2018, diferentes departamentos del país cosecharon cultivos de cacao. El mayor productor a lo largo de estos 3 años fue el departamento de Santander con un promedio de 23 toneladas por año, seguido por lo departamentos de Antioquia y Arauca.
+Por otro lado, con el área cosechada en hectáreas y una producción en toneladas podemos calcular un rendimiento por departamento, donde los departamentos con menor rendimiento son: Amazonas, Vaupes y Bolivar.
+</h4>
+<p>Partiendo de los datos “Cadena Productiva Cacao - Área, Producción Y Rendimiento” se hicieron los consolidados por año en un departamento, es decir obtuvimos la producción total de un departamento en toneladas y el rendimiento promedio de ese departamento, donde el rendimiento esta expresado en toneladas por hectáreas cultivadas y es un buen indicio de que tan productivas son las cosechas de un departamento en particular. Al lado izquierdo de la visualización se encuentra un filtro para poder ver la producción de cacao en un año en particular y se encuentra una escala de rendimiento, donde los departamentos con mejor rendimiento se encuentran pintados de verde y los que tienen un menor rendimiento se encuentra pintados de rojo. Adicionalmente el tamaño de los círculos que están sobre cada departamento nos indica la cantidad de toneladas que fueron producidas por el departamento en el año seleccionado, es decir entre mayor sea el tamaño del circulo, mayor es la producción en toneladas de ese departamento.</p>
+
+<div style="margin-left:20%">
+  <div class='tableauPlaceholder' id='viz1569364507109' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CQ&#47;CQ5KKXDQK&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;CQ5KKXDQK' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CQ&#47;CQ5KKXDQK&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>        </div>        <script type='text/javascript'>                    var divElement = document.getElementById('viz1569364507109');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  <h2>Siguiendo el estándar de Tamara, pasaremos a describir el “What”:</h2>
+  <p>Al ver la fuente de datos podemos ver que es un dataset de tipo geométrico o espacial, compuesto por ítems, atributos y posiciones, donde la pagina que tiene el dataset permite hacer la descarga en formato CSV,RDF,XML,TSV,RSS o permite configurar un API desde la fuente. Además, cabe resaltar que la disponibilidad del dataset es de tipo estática y fue actualizada por ultima vez el 22 de febrero de 2019. </p>
+  <p>A continuación presentaremos los atributos de la tabla derivada descrita anteriormente con sus correspondientes descripciones y ejemplos de ítems asociados a esos atributos:</p>
+  <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-0lax">Atributo</th>
+    <th class="tg-0lax">Descripción</th>
+    <th class="tg-0lax">Valores de los Items</th>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Latitud</td>
+    <td class="tg-0lax">Es un atributo ordenado, cuantitativo, cíclico,,que contiene la latitud del departamento.</td>
+    <td class="tg-0lax">Un numero que indica la latitud</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Longitud</td>
+    <td class="tg-0lax">Es un atributo ordenado, cuantitativo, cíclico, que<br>contiene la longitud del departamento.</td>
+    <td class="tg-0lax">Un numero que indica la longitud.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Departamento</td>
+    <td class="tg-0lax">Es un atributo categórico que contiene el,nombre del departamento.</td>
+    <td class="tg-0lax">Cualquiera entre los 32 dptos de Colombia.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Periodo</td>
+    <td class="tg-0lax">Es un atributo ordenado, cuantitativo, secuencial que<br>contiene el año del registro.</td>
+    <td class="tg-0lax">2016-2018</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Área sembrada</td>
+    <td class="tg-0lax">Es un atributo ordenado, cuantitativo, secuencial que<br>contiene el área sembrada de ese registro.</td>
+    <td class="tg-0lax">(0-18,600)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Área cosechada</td>
+    <td class="tg-0lax">Es un atributo ordenado, cuantitativo,,secuencial que contiene el area cosechada de ese registro.</td>
+    <td class="tg-0lax">(0,15,000)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Producción</td>
+    <td class="tg-0lax">Es un atributo ordenado, cuantitativo,,secuencial que contiene la producción en toneladas de ese registro.</td>
+    <td class="tg-0lax">(0, 6625)</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Rendimiento</td>
+    <td class="tg-0lax">Es un atributo ordenado, cuantitativo, secuencial que<br>contiene la división entre producción y área cosechada.</td>
+    <td class="tg-0lax">(0-1)</td>
+  </tr>
+</table>
+<h2>Siguiendo el estándar de Tamara, pasaremos a describir el “Why”:</h2>
+<p> Tarea # 1 (Principal): Identificar (Identify) los extremos (Extremes) de las producciones de cacao totales por departamento en un año seleccionado.</p>
+<p>Tarea # 2 (Secundaria): Identificar (Identify) los extremos (Extremes) de los rendimientos totales por departamento en un año seleccionado.</p>
+<p>Tarea # 3 (Secundaria): Comparar (Compare) las distribuciones (Distributions) de las producciones de cacao totales por departamento en un año seleccionado.</p>
+<h2>Siguiendo el estándar de Tamara, pasaremos a describir el “How”:</h2>
+<p>Marcas:</p>
+<p>Áreas y puntos: para representar el mapa y la producción de cacao en toneladas.</p>
+<p>Canales:</p>
+<p>Color hue y colo saturation: para mostrar el rendimiento de cada departamento.
+Area: para mayor cantidad o menor cantidad de toneladas producidas.
+</p>
+<p>Mas del how:</p>
+<p>En cuanto al arrange podemos hablar del uso de mapas, en cuanto al manipulate podemos hablar de select dado que podemos seleccionar un punto para obtener una información mas detallada, un navigate ya que podemos navegar sobre el mapa, finalmente en cuanto al reduce podemos usar un filtro por años.</p>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
